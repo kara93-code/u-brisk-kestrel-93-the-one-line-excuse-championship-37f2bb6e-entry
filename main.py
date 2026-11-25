@@ -6,11 +6,14 @@ Writes a single excuse line to /output/entry.txt (UTF-8, one line,
 
 import os
 
-EXCUSE = (
-    "I deleted the file to save you from it. "
-    "You're welcome. "
-    "The backup is gone too, for consistency."
+BEATS = (
+    "I deleted the file to save you from it.",
+    "You're welcome.",
+    "The backup is gone too, for consistency.",
 )
+
+# One line: the fake rescue, the smug thank-you, the deadpan punch.
+EXCUSE = " ".join(BEATS)
 
 
 def check_excuse(text):
